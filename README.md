@@ -1,10 +1,10 @@
 **YO WASUP**
-# Hello
+# Hello World!
 - 👋 Hi, I’m @seojoon-y
 - 👀 I’m interested in full-stack web development and virtual reality.
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 🌱 I can code in Python, Node.js, PHP, MySQL.
+- - 📫 I can also do a bit of Swift, C#
+- 💞️ I’m pretty good at web scraping too.
 
 <!---
 seojoon-y/seojoon-y is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
