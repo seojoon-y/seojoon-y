@@ -2,7 +2,8 @@
 # Hello World!
 - 👋 Hi, I’m @seojoon-y
 - 👀 I’m interested in full-stack web development and virtual reality.
-- 🌱 I can code in Python, Node.js, PHP, MySQL.
+- 🌱 I can code in Python, Node.js, PHP, Go, Lua, PostgreSQL, MySQL.
+- 💞️ I love SvelteKit, Firebase, Cloudflare
 - - 📫 I can also do a bit of Swift, C#
 - 💞️ I’m pretty good at web scraping too.
 
