@@ -38,9 +38,9 @@ HOST 137.184.105.149
 
 ```
 server_name [SOMETHING eg. www].onionfist.com;
-    location /hooks/ {
-        proxy_pass http://localhost:9000/hooks/;
-    }
+	location /hooks/ {
+                proxy_pass http://localhost:9000/hooks/;
+	}
 	location / {
                 proxy_pass http://localhost:5000;
                 proxy_http_version 1.1;
