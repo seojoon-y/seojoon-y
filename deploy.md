@@ -184,7 +184,7 @@ WantedBy=multi-user.target
 `chmod 0644 webhook.service`
 
 
-solved by replacing /etc/webhook.conf with the content of hooks.json :-)
+Replace `/etc/webhook.conf` with the content of `hooks.json`
 
 
 
