@@ -81,6 +81,8 @@ Host github.com
 
 `git clone git@github.com:onionfist/icerepo.git`
 
+Start pm2: `cd icerepo && pm2 start`
+
 ## Webhook
 
 ### In github:
@@ -104,7 +106,7 @@ npm install
 npm run build
 
 # 4. Restart application
-pm2 restart
+pm2 restart nodejs-app
 ```
 
 `sudo apt install webhook`
