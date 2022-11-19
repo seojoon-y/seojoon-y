@@ -83,8 +83,6 @@ Host github.com
 
 `git clone git@github.com:onionfist/icerepo.git`
 
-Start pm2: `cd icerepo && pm2 start`
-
 ## Webhook
 
 ### In github:
@@ -185,9 +183,15 @@ WantedBy=multi-user.target
 
 `reboot`
 
+`cd /etc/systemd/system/`
+
 `sudo systemctl start webhook.service`
 
 `sudo systemctl status webhook.service`
+
+Start pm2: `cd icerepo && pm2 start`
+
+You are all set!
 
 Useful info:
 * Webhook
