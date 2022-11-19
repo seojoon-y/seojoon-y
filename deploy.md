@@ -166,7 +166,7 @@ For testing: `webhook -hooks hooks.json -hotreload -verbose -http-methods post` 
 ```
 [Unit]
 Description= Github Webhook
-Documentation=https://github.com/adnanh/webhook
+Documentation=https://github.com/seojoon-y/seojoon-y/blob/main/deploy.md
 After=network.target
 StartLimitIntervalSec=0
 
