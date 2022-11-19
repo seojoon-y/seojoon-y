@@ -183,10 +183,7 @@ WantedBy=multi-user.target
 
 `chmod 0644 webhook.service`
 
-
-Replace `/etc/webhook.conf` with the content of `hooks.json`
-
-
+`reboot`
 
 `sudo systemctl start webhook.service`
 
