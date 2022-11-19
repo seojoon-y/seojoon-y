@@ -88,6 +88,8 @@ Payload URL: `https://iceparty-game-server-na-1.onionfist.com/hooks/nodejs-app`
 Content type: `application/json`
 Secret: `SOME_SUPER_SECRET_PASSWORD`
 
+### In VM:
+
 `sudo apt install webhook`
 
 `nano ~/hooks.json`
@@ -127,7 +129,42 @@ Secret: `SOME_SUPER_SECRET_PASSWORD`
 ]
 ```
 
-`webhook -hooks hooks.json -hotreload -verbose -http-methods post`
+For testing: `webhook -hooks hooks.json -hotreload -verbose -http-methods post`
+
+### Webhook server
+
+`cd /etc/systemd/system/`
+
+`nano webhook.service`
+
+```
+[Unit]
+Description= Github Webhook
+Documentation=https://github.com/adnanh/webhook
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=5
+ExecStart=webhook -verbose -hotreload -hooks /root/hooks.json -port 9000 -ip "127.0.0.1" -http-methods post
+
+[Install]
+WantedBy=multi-user.target
+```
+
+`chmod 0644 webhook.service`
+
+
+solved by replacing /etc/webhook.conf with the content of hooks.json :-)
+
+
+
+`sudo systemctl start webhook.service`
+
+`sudo systemctl status webhook.service`
 
 Useful info:
 * Webhook
