@@ -203,12 +203,21 @@ Useful info:
     * https://www.youtube.com/watch?v=hkuoX--XlxE
 
 
-# Deploy
+# Makefile
+
 ```
-make deploy:
+deploy:
+	make echo-deploy-start
 	git checkout production
 	git merge development
 	git push
 	git checkout development
 	make echo-deploy-end
+
+echo-deploy-start:
+	@echo "\033[92m -- DEPLOY STARTING -- \033[0m"
+
+echo-deploy-end:
+	@echo "\033[92m -- DEPLOY FINISHED -- \033[0m"
+
 ```
