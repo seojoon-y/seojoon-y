@@ -55,6 +55,8 @@ server_name [SOMETHING eg. www].onionfist.com;
     }
 ```
 
+`sudo nginx -t && sudo service nginx restart`
+
 ## Cloudflare - DNS
 Simply add the A record to DNS.
 
