@@ -189,6 +189,8 @@ WantedBy=multi-user.target
 
 `sudo systemctl status webhook.service`
 
+`cd`
+
 Start pm2: `cd icerepo && pm2 start`
 
 You are all set!
