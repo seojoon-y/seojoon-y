@@ -153,7 +153,7 @@ pm2 restart nodejs-app
 ]
 ```
 
-For testing: `webhook -hooks hooks.json -hotreload -verbose -http-methods post`
+For testing: `webhook -hooks hooks.json -hotreload -verbose -http-methods post` and then make sure to `reboot`
 
 ### Webhook server
 
