@@ -199,3 +199,14 @@ Useful info:
 * Webhook
     * https://maximorlov.com/automated-deployments-from-github-with-webhook/#configure-webhook-endpoint
     * https://www.youtube.com/watch?v=hkuoX--XlxE
+
+
+# Deploy
+```
+make deploy:
+	git checkout production
+	git merge development
+	git push
+	git checkout development
+	make echo-deploy-end
+```
