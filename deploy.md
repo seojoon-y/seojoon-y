@@ -193,6 +193,8 @@ WantedBy=multi-user.target
 
 Start pm2: `cd icerepo && pm2 start`
 
+Auto-start pm2 on reboot: `pm2 startup`
+
 You are all set!
 
 Useful info:
