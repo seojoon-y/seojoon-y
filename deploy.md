@@ -114,6 +114,8 @@ npm run build
 pm2 restart nodejs-app
 ```
 
+`chmod +x redeploy-nodejs-app.sh`
+
 `sudo apt install webhook`
 
 `nano ~/hooks.json`
