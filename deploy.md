@@ -89,6 +89,23 @@ Content type: `application/json`
 Secret: `SOME_SUPER_SECRET_PASSWORD`
 
 ### In VM:
+`nano redeploy-nodejs-app.sh`
+
+```
+#!/bin/sh
+
+# 1. Fetch the latest code from remote
+git pull -f origin production
+
+# 2. Install dependencies
+npm install
+
+# 3. (Optional) Build step that compiles code, bundles assets, etc.
+npm run build
+
+# 4. Restart application
+pm2 restart nodejs-app
+```
 
 `sudo apt install webhook`
 
