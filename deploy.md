@@ -81,6 +81,8 @@ Host github.com
 
 `git clone git@github.com:onionfist/icerepo.git`
 
+`cd icerepo && npm install`
+
 ## Webhook
 
 ### In github:
