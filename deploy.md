@@ -22,15 +22,15 @@ HOST 137.184.105.149
 
 `apt install nodejs && apt install npm`
 
-## UFW
+## Firewall (UFW)
 
 `ufw enable && ufw status && ufw allow ssh && ufw allow http && ufw allow https`
 
-## PM2
+## Node Process Manager (PM2)
 
 `npm install -g pm2 && pm2 status`
 
-## Nginx
+## Reverse Proxy (Nginx)
 
 `sudo apt install nginx`
 
