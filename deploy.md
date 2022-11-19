@@ -112,6 +112,8 @@ npm run build
 pm2 restart nodejs-app
 ```
 
+Might have to add `npm uninstall sharp && npm install --platform=linux --arch=x64 sharp`
+
 `chmod +x redeploy-nodejs-app.sh`
 
 `sudo apt install webhook`
