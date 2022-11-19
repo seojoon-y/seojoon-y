@@ -69,9 +69,7 @@ Simply add the A record to DNS.
 
 `cat ~/.ssh/id_rsa.pub` --> And copy this into Github deploy key, with only read access.
 
-`touch ~/.ssh/config`
-
-`chmod 600 ~/.ssh/config`
+`touch ~/.ssh/config && chmod 600 ~/.ssh/config`
 
 `nano ~/.ssh/config`
 
