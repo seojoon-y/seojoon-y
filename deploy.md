@@ -203,6 +203,10 @@ Useful info:
     * https://www.youtube.com/watch?v=hkuoX--XlxE
 
 
+# Set environment variable:
+
+`nano /etc/environment`
+
 # Makefile
 
 ```
