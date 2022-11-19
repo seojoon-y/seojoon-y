@@ -104,7 +104,7 @@ npm install
 npm run build
 
 # 4. Restart application
-pm2 restart nodejs-app
+pm2 restart
 ```
 
 `sudo apt install webhook`
