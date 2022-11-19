@@ -191,7 +191,7 @@ WantedBy=multi-user.target
 
 `cd`
 
-Start pm2: `cd icerepo && pm2 start`
+Start pm2: `cd icerepo && pm2 start` OR `pm2 start --only nodejs-app-slave`
 
 Auto-start pm2 on reboot: `pm2 startup`
 
