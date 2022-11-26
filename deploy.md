@@ -100,6 +100,7 @@ Secret: `SOME_SUPER_SECRET_PASSWORD`
 #!/bin/sh
 
 # 1. Fetch the latest code from remote
+git reset --hard
 git pull -f origin production
 
 # 2. Install dependencies
@@ -109,7 +110,7 @@ npm install
 npm run build
 
 # 4. Restart application
-pm2 restart nodejs-app
+pm2 restart nodejs-app --update-env
 ```
 
 Might have to add `npm uninstall sharp && npm install --platform=linux --arch=x64 sharp`
