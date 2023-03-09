@@ -212,6 +212,10 @@ Useful info:
 
 Update pm2 after changing env variables: `pm2 restart all --update-env`
 
+A more reliable way to fix it is:
+`pm2 kill`
+`pm2 start --only app-id`
+
 # Makefile
 
 ```
