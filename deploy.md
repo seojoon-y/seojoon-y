@@ -237,4 +237,7 @@ echo-deploy-end:
 
 # Log too big
 `du -h --max-depth=1`
+
 `pm2 flush` and `reboot`
+
+`pm2 install pm2-logrotate`
