@@ -234,3 +234,7 @@ echo-deploy-end:
 	@echo "\033[92m -- DEPLOY FINISHED -- \033[0m"
 
 ```
+
+# Log too big
+`du -h --max-depth=1`
+`pm2 flush` and `reboot`
