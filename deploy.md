@@ -67,6 +67,16 @@ Simply add the A record to DNS.
 ## Certbot - SSL
 `sudo snap install core; sudo snap refresh core && sudo snap install --classic certbot && sudo ln -s /snap/bin/certbot /usr/bin/certbot && sudo certbot --nginx`
 
+Or in case of Debian:
+
+```
+sudo apt update && sudo apt install -y snapd
+sudo snap install core && sudo snap refresh core
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot --nginx
+```
+
 ## Clone github using deploy key
 
 `ssh-keygen -t rsa`
