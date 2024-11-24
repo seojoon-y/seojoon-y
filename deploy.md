@@ -21,9 +21,12 @@ HOST 137.184.105.149
 `sudo apt update && curl -sL https://deb.nodesource.com/setup_23.x | sudo -E bash -` (Used to be 16.x)
 
 `apt install nodejs`
+
 Seems to be not needed: `apt install npm`
 
 ## Firewall (UFW)
+
+`sudo apt install -y ufw`
 
 `ufw enable && ufw status && ufw allow ssh && ufw allow http && ufw allow https`
 
