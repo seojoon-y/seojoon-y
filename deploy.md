@@ -18,7 +18,7 @@ HOST 137.184.105.149
 
 ## Node
 
-`sudo apt update && curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -`
+`sudo apt update && curl -sL https://deb.nodesource.com/setup_23.x | sudo -E bash -` (Used to be 16.x)
 
 `apt install nodejs && apt install npm`
 
