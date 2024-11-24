@@ -93,6 +93,8 @@ Host github.com
     IdentityFile ~/.ssh/id_rsa
 ```
 
+`sudo apt install -y git`
+
 `git clone git@github.com:onionfist/icerepo.git`
 
 `cd icerepo && make server && npm install`
