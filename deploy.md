@@ -257,3 +257,12 @@ echo-deploy-end:
 `pm2 flush` and `reboot`
 
 `pm2 install pm2-logrotate`
+
+# Problem: Cloudflare Redirct 301 many times
+
+Check SSL/TLS Settings in Cloudflare:
+
+Go to SSL/TLS in your Cloudflare dashboard.
+
+Ensure the SSL mode is set to Full or Full (Strict). Avoid using Flexible, as it can cause redirect loops.
+
