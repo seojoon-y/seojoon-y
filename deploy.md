@@ -3,7 +3,9 @@
 ## SSH
 
 `ssh-copy-id root@IP.IP.IP.IP`
+
 OR
+
 `nano ~/.ssh/config`
 
 ```
