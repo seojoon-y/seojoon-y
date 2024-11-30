@@ -22,9 +22,7 @@ HOST 137.184.105.149
 
 ## Node
 
-`sudo apt update && curl -sL https://deb.nodesource.com/setup_23.x | sudo -E bash -` (Used to be 16.x)
-
-`apt install nodejs`
+`sudo apt update && curl -sL https://deb.nodesource.com/setup_23.x | sudo -E bash - && sleep 1 && sudo apt install nodejs -y` (Used to be 16.x)
 
 Seems to be not needed: `apt install npm`
 
