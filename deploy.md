@@ -22,25 +22,29 @@ HOST 137.184.105.149
 
 ## Node
 
-`sudo apt update && curl -sL https://deb.nodesource.com/setup_23.x | sudo -E bash - && sleep 1 && sudo apt install nodejs -y` (Used to be 16.x)
-
-Seems to be not needed: `apt install npm`
+```
+sudo apt update && curl -sL https://deb.nodesource.com/setup_23.x | sudo -E bash - && sleep 1 && sudo apt install nodejs -y
+```
 
 ## Firewall (UFW)
 
-`sudo apt install -y ufw`
-
-`ufw enable && ufw status && ufw allow ssh && ufw allow http && ufw allow https`
+```
+sudo apt install -y ufw && ufw enable && ufw status && ufw allow ssh && ufw allow http && ufw allow https
+```
 
 ## Node Process Manager (PM2)
 
-`npm install -g pm2 && pm2 status`
+```
+npm install -g pm2 && pm2 status
+```
 
 ## Reverse Proxy (Nginx)
 
-`sudo apt install -y nginx`
+```
+sudo apt install -y nginx
 
-`sudo vim /etc/nginx/sites-available/default`
+sudo vim /etc/nginx/sites-available/default
+```
 
 ```
 server_name staging-api.onionfist.com;
