@@ -48,7 +48,7 @@ server_name [SOMETHING eg. www].onionfist.com;
                 proxy_pass http://localhost:9000/hooks/;
 	}
 	location / {
-                proxy_pass http://localhost:5000;
+                proxy_pass http://localhost:4000;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
                 proxy_set_header Connection 'upgrade';
