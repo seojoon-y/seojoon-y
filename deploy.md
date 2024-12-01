@@ -81,13 +81,16 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot && sudo certbot --nginx
 
 ## Clone github using deploy key
 
-`ssh-keygen -t rsa`
+```
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
+```
 
-`cat ~/.ssh/id_rsa.pub` --> And copy this into Github deploy key, with only read access.
+--> And copy this into Github deploy key, with only read access.
 
-`touch ~/.ssh/config && chmod 600 ~/.ssh/config`
-
-`nano ~/.ssh/config`
+```
+touch ~/.ssh/config && chmod 600 ~/.ssh/config && vim ~/.ssh/config
+```
 
 ```
 Host github.com
@@ -95,11 +98,13 @@ Host github.com
     IdentityFile ~/.ssh/id_rsa
 ```
 
-`sudo apt install -y git`
+```
+sudo apt install -y git && git clone git@github.com:onionfist/icerepo.git
+```
 
-`git clone git@github.com:onionfist/icerepo.git`
-
-`cd icerepo && make server && npm install`
+```
+cd icerepo && npm install
+```
 
 ## Webhook
 
