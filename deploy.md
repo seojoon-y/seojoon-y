@@ -291,3 +291,6 @@ Go to SSL/TLS in your Cloudflare dashboard.
 
 Ensure the SSL mode is set to Full or Full (Strict). Avoid using Flexible, as it can cause redirect loops.
 
+# psql
+sudo apt install -y postgresql-client
+
