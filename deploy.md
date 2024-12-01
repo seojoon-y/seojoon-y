@@ -251,7 +251,7 @@ Useful info:
 
 # Set environment variable:
 
-`vim /etc/environment`
+`sudo vim /etc/environment`
 
 Update pm2 after changing env variables: `pm2 restart all --update-env`
 
