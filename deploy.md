@@ -152,7 +152,7 @@ npm run build
 
 # 4. Restart application
 pm2 kill
-pm2 start ecosystem.config.cjs
+pm2 start ecosystem.config.cjs --update-env
 ```
 
 
