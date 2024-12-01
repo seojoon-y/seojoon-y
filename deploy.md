@@ -6,7 +6,7 @@
 
 OR
 
-`nano ~/.ssh/config`
+`vim ~/.ssh/config`
 
 ```
 HOST 137.184.105.149
@@ -40,7 +40,7 @@ Seems to be not needed: `apt install npm`
 
 `sudo apt install -y nginx`
 
-`sudo nano /etc/nginx/sites-available/default`
+`sudo vim /etc/nginx/sites-available/default`
 
 ```
 server_name staging-api.onionfist.com;
@@ -116,7 +116,7 @@ Content type: `application/json`
 Secret: `SOME_SUPER_SECRET_PASSWORD`
 
 ### In VM:
-`nano redeploy-main-hook.sh`
+`vim redeploy.sh`
 
 ```
 #!/bin/sh
@@ -137,17 +137,17 @@ pm2 restart main-hook --update-env
 
 Might have to add `npm uninstall sharp && npm install --platform=linux --arch=x64 sharp`
 
-`chmod +x redeploy-main-hook.sh`
+`chmod +x redeploy.sh`
 
 `sudo apt install webhook`
 
-`nano ~/hooks.json`
+`vim ~/hooks.json`
 
 ```
 [
   {
     "id": "main-hook",
-    "execute-command": "/root/redeploy-main-hook.sh",
+    "execute-command": "/root/redeploy.sh",
     "command-working-directory": "/root/icerepo",
     "response-message": "Delivered",
     "trigger-rule": {
@@ -184,7 +184,7 @@ For testing: `webhook -hooks hooks.json -hotreload -verbose -http-methods post` 
 
 `cd /etc/systemd/system/`
 
-`nano webhook.service`
+`vim webhook.service`
 
 ```
 [Unit]
@@ -230,7 +230,7 @@ Useful info:
 
 # Set environment variable:
 
-`nano /etc/environment`
+`vim /etc/environment`
 
 Update pm2 after changing env variables: `pm2 restart all --update-env`
 
