@@ -118,6 +118,7 @@ Secret: `SOME_SUPER_SECRET_PASSWORD`
 ### In VM:
 `vim redeploy.sh`
 
+Option 1:
 ```
 #!/bin/sh
 
@@ -132,8 +133,28 @@ npm install
 npm run build
 
 # 4. Restart application
-pm2 restart main-hook --update-env
+pm2 restart api-server --update-env
 ```
+
+Option 2: (could be better for ENV variable refresh)
+```
+#!/bin/sh
+
+# 1. Fetch the latest code from remote
+git reset --hard
+git pull -f origin production
+
+# 2. Install dependencies
+npm install
+
+# 3. (Optional) Build step that compiles code, bundles assets, etc.
+npm run build
+
+# 4. Restart application
+pm2 kill
+pm2 start ecosystem.config.cjs
+```
+
 
 Might have to add `npm uninstall sharp && npm install --platform=linux --arch=x64 sharp`
 
