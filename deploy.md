@@ -67,16 +67,16 @@ server_name [SOMETHING eg. www].onionfist.com;
 Simply add the A record to DNS.
 
 ## Certbot - SSL
+Ubuntu:
+
 `sudo snap install core; sudo snap refresh core && sudo snap install --classic certbot && sudo ln -s /snap/bin/certbot /usr/bin/certbot && sudo certbot --nginx`
 
 Or in case of Debian:
 
 ```
 sudo apt update && sudo apt install -y snapd
-sudo snap install core && sudo snap refresh core
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo certbot --nginx
+sudo snap install core && sudo snap refresh core && sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot && sudo certbot --nginx
 ```
 
 ## Clone github using deploy key
