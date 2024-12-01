@@ -143,14 +143,7 @@ Option 2: (could be better for ENV variable refresh)
 # 1. Fetch the latest code from remote
 git reset --hard
 git pull -f origin production
-
-# 2. Install dependencies
 npm install
-
-# 3. (Optional) Build step that compiles code, bundles assets, etc.
-npm run build
-
-# 4. Restart application
 pm2 kill
 pm2 flush
 pm2 start ecosystem.config.cjs --update-env
