@@ -38,7 +38,7 @@ Seems to be not needed: `apt install npm`
 
 ## Reverse Proxy (Nginx)
 
-`sudo apt install nginx`
+`sudo apt install -y nginx`
 
 `sudo nano /etc/nginx/sites-available/default`
 
