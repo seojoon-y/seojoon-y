@@ -43,7 +43,7 @@ Seems to be not needed: `apt install npm`
 `sudo nano /etc/nginx/sites-available/default`
 
 ```
-server_name [SOMETHING eg. www].onionfist.com;
+server_name staging-api.onionfist.com;
 	location /hooks/ {
                 proxy_pass http://localhost:9000/hooks/;
 	}
