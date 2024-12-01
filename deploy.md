@@ -110,14 +110,14 @@ cd icerepo && npm install
 
 ### In github:
 
-Payload URL: `https://iceparty-game-server-na-1.onionfist.com/hooks/nodejs-app`
+Payload URL: `https://iceparty-game-server-na-1.onionfist.com/hooks/main-hook`
 
 Content type: `application/json`
 
 Secret: `SOME_SUPER_SECRET_PASSWORD`
 
 ### In VM:
-`nano redeploy-nodejs-app.sh`
+`nano redeploy-main-hook.sh`
 
 ```
 #!/bin/sh
@@ -133,12 +133,12 @@ npm install
 npm run build
 
 # 4. Restart application
-pm2 restart nodejs-app --update-env
+pm2 restart main-hook --update-env
 ```
 
 Might have to add `npm uninstall sharp && npm install --platform=linux --arch=x64 sharp`
 
-`chmod +x redeploy-nodejs-app.sh`
+`chmod +x redeploy-main-hook.sh`
 
 `sudo apt install webhook`
 
@@ -147,8 +147,8 @@ Might have to add `npm uninstall sharp && npm install --platform=linux --arch=x6
 ```
 [
   {
-    "id": "nodejs-app",
-    "execute-command": "/root/redeploy-nodejs-app.sh",
+    "id": "main-hook",
+    "execute-command": "/root/redeploy-main-hook.sh",
     "command-working-directory": "/root/icerepo",
     "response-message": "Delivered",
     "trigger-rule": {
@@ -217,7 +217,7 @@ WantedBy=multi-user.target
 
 `cd`
 
-Start pm2: `cd icerepo && pm2 start` OR `pm2 start --only nodejs-app-slave`
+Start pm2: `cd icerepo && pm2 start` OR `pm2 start --only main-hook-slave`
 
 Auto-start pm2 on reboot: `pm2 startup`
 
