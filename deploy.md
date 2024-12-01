@@ -216,7 +216,7 @@ WantedBy=multi-user.target
 
 `cd`
 
-Start pm2: `cd icerepo && pm2 start` OR `pm2 start --only main-hook-slave`
+Start pm2: `cd icerepo && pm2 start` OR `pm2 start --only api-server`
 
 Auto-start pm2 on reboot: `pm2 startup`
 
