@@ -102,7 +102,7 @@ sudo apt install -y git && git clone git@github.com:onionfist/icerepo.git
 ```
 
 ```
-cd icerepo && npm install
+cd icerepo && npm install --verbose
 ```
 
 ## Webhook
