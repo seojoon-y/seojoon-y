@@ -82,8 +82,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot && sudo certbot --nginx
 ## Clone github using deploy key
 
 ```
-ssh-keygen -t rsa
-cat ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa && cat ~/.ssh/id_rsa.pub
 ```
 
 --> And copy this into Github deploy key, with only read access.
