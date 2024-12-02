@@ -9,7 +9,7 @@ sudo systemctl restart webhook.service
 sudo systemctl daemon-reload
 ```
 
-# Error debug
+# See logs
 
 ```
 sudo journalctl -u webhook.service
@@ -19,6 +19,6 @@ sudo journalctl -u webhook.service
 # Clear logs
 
 ```
-sudo journalctl --unit=webhook.service --vacuum-time=1s
+sudo systemctl stop systemd-journald && sudo rm -rf /var/log/journal/* && sudo systemctl start systemd-journald
 
 ```
