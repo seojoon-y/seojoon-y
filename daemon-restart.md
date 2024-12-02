@@ -4,3 +4,9 @@
 sudo systemctl restart webhook.service
 sudo systemctl daemon-reload
 ```
+
+# Error debug
+
+```
+sudo journalctl -u webhook.service
+```
