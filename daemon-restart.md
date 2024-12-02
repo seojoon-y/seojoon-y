@@ -1,3 +1,7 @@
+```
+cd /etc/systemd/system/
+```
+
 # how to restart systemd webhook.service and the daemon
 
 ```
