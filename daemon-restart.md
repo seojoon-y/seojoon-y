@@ -5,8 +5,7 @@ cd /etc/systemd/system/
 # how to restart systemd webhook.service and the daemon
 
 ```
-sudo systemctl restart webhook.service
-sudo systemctl daemon-reload
+sudo systemctl restart webhook.service && sudo systemctl daemon-reload
 ```
 
 # See logs
