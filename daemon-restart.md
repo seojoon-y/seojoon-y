@@ -21,3 +21,9 @@ sudo journalctl -u webhook.service
 sudo systemctl stop systemd-journald && sudo rm -rf /var/log/journal/* && sudo systemctl start systemd-journald
 
 ```
+
+# Give it access to ENV
+```
+[Service]
+EnvironmentFile=/etc/environment
+```
