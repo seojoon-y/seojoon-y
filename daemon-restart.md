@@ -10,3 +10,11 @@ sudo systemctl daemon-reload
 ```
 sudo journalctl -u webhook.service
 ```
+
+
+# Clear logs
+
+```
+sudo journalctl --unit=webhook.service --vacuum-time=1s
+
+```
