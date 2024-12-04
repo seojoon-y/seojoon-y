@@ -2,10 +2,10 @@
 cd /etc/systemd/system/
 ```
 
-# how to restart systemd webhook.service and the daemon
+# Restart & clear logs
 
 ```
-sudo systemctl restart webhook.service && sudo systemctl daemon-reload
+sudo systemctl restart webhook.service && sudo systemctl daemon-reload && sudo systemctl stop systemd-journald && sudo rm -rf /var/log/journal/* /run/log/journal/* && sudo systemctl start systemd-journald
 ```
 
 # See logs
@@ -14,13 +14,6 @@ sudo systemctl restart webhook.service && sudo systemctl daemon-reload
 sudo journalctl -u webhook.service
 ```
 
-
-# Clear logs
-
-```
-sudo systemctl stop systemd-journald && sudo rm -rf /var/log/journal/* /run/log/journal/* && sudo systemctl start systemd-journald
-
-```
 
 # Give it access to ENV
 ```
