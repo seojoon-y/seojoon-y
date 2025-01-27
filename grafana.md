@@ -10,3 +10,12 @@ I wasted 1 hour cause of this.
 
 `TLS/SSL Client Key` : BLANK
 
+# Systemd
+
+`cd /etc/systemd/system`
+
+`sudo systemctl status grafana-server`
+
+`sudo systemctl restart grafana-server`
+
+`sudo journalctl -u grafana-server -n 100`
