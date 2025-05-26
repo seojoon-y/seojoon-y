@@ -1,11 +1,8 @@
-**YO WASUP**
+# Seojoon Yeon, Jason
+**I have a very cool keyboard and a cool keyboard layout**
 # Hello World!
-- 👋 Hi, I’m @seojoon-y
-- 👀 I’m interested in full-stack web development and virtual reality.
-- 🌱 I can code in Python, Node.js, PHP, Go, Lua, PostgreSQL, MySQL.
-- 💞️ I love SvelteKit, Firebase, Cloudflare
-- - 📫 I can also do a bit of Swift, C#
-- 💞️ I’m pretty good at web scraping too.
+![jason](https://github.com/user-attachments/assets/675682a5-3383-4538-bb87-74b13045ba2c)
+<img width="1256" alt="Screenshot 2025-05-26 at 9 26 57 AM" src="https://github.com/user-attachments/assets/36b647f5-bb1d-4d0d-8e2e-b022d9f61efd" />
 
 <!---
 seojoon-y/seojoon-y is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
