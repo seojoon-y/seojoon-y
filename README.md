@@ -3,7 +3,7 @@
 
  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seojoon-y&hide=css&theme=tokyonight)
 
-![Photo on 5-26-25 at 9 37 PM #3](https://github.com/user-attachments/assets/018bc96a-24a1-4e22-b3eb-66d7d833e18a)
+<img src="https://github.com/user-attachments/assets/018bc96a-24a1-4e22-b3eb-66d7d833e18a" width="300"/>
 
 
 
