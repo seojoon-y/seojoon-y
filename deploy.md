@@ -20,6 +20,12 @@ HOST 137.184.105.149
 
 # Run remotely
 
+## stuff
+```
+sudo apt update
+sudo apt install build-essential
+```
+
 ## Node
 
 ```
