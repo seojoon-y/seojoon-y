@@ -23,7 +23,7 @@ HOST 137.184.105.149
 ## Node
 
 ```
-sudo apt update && curl -sL https://deb.nodesource.com/setup_23.x | sudo -E bash - && sleep 1 && sudo apt install nodejs -y
+sudo apt update && curl -sL https://deb.nodesource.com/setup_24.x | sudo -E bash - && sleep 1 && sudo apt install nodejs -y
 ```
 
 ## Firewall (UFW)
